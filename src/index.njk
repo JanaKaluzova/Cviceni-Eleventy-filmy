@@ -1,0 +1,12 @@
+---
+layout: zakladni
+---
+    
+<h1>Zkouska uvodni stranky</h1>
+
+<ul>
+	{% for film in filmy %}
+		<li><a href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a></li>
+	{% endfor %}
+</ul>
+ 
