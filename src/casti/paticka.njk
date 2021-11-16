@@ -1,0 +1,32 @@
+
+<div class="layout__paticka">
+<footer class="paticka">
+<div class="paticka_obsah">
+<div class="paticka_casti">
+<section class="paticka_sekce">
+<h2 class="paticka_nadpis">Podobné weby</h2>
+<ul class="paticka_seznam">
+
+{% for web in podobneWeby %}
+		<li class="paticka_polozka"><a class="paticka_odkaz" href="{{ web.adresa | slug }}">{{ web.nazev }}</a></li>
+	{% endfor %}
+</ul>
+
+</section>
+
+<section class="paticka_sekce">
+<h2 class="paticka_nadpis">Obecné</h2>
+<ul class="paticka_seznam">
+{% for puvod in obecne %}
+		<li class="paticka_polozka"><a class="paticka_odkaz" href="{{ puvod.adresa | slug }}">{{ puvod.nazev }}</a></li>
+	{% endfor %}
+
+</ul>
+
+</section>
+
+
+</div>
+</div>
+</footer>
+</div>

@@ -1,0 +1,38 @@
+.paticka_obsah {
+  max-width: 52rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.paticka_casti {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.paticka_nadpis {
+  margin: 0;
+  font-size: 1.1em;
+  color: #303030;
+}
+
+.paticka_seznam {
+  margin: 0.5em 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.paticka_polozka {
+  padding: 0.2em 0;
+  line-height: 1.1;
+}
+
+.paticka_odkaz {
+  text-decoration: none;
+  color: #444444;
+}
+
+.layout__paticka {
+  background-color: rgb(245, 244, 244);
+}

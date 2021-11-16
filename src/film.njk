@@ -7,4 +7,16 @@ pagination:
 permalink: "/film/{{ film.nazev | slug }}/"
 ---
 
+<div class="layout__telo">
 <h2>{{ film.nazev }}</h2>
+
+<p><span style="font-weight:bold"> Rok: </span> {{ film.rok }} </p>
+<p><span style="font-weight:bold"> Země: </span> {{ film.zeme | join(', ') }}</p>
+<p><span style="font-weight:bold"> žánr: </span> {{ film.zanr | join(' / ') }} </p>
+<p><span style="font-weight:bold"> Délka: </span> {{ film.delka }} minut</p>
+
+<h2>Obsah</h2>
+
+<p> {{ film.obsah.text }} (<a class="autor__odkaz" href="{{ film.obsah.autor.odkaz }}">{{ film.obsah.autor.jmeno }}</a>)</p>
+
+</div>
