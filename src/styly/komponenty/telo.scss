@@ -16,7 +16,7 @@
   padding: 0;
 }
 
-.seznam_polozka {
+.seznam__polozka {
   padding: 0.2em 0;
   line-height: 1.1;
   text-decoration: none;
@@ -24,4 +24,19 @@
 
 p {
   margin: 0.2rem;
+}
+
+.seznam__odkaz::before {
+  content: "";
+  margin-bottom: 0.1em;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: currentColor;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.seznam__odkaz {
+  color: #3d5afe;
+  text-decoration: none;
 }
